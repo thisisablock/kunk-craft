@@ -1,0 +1,40 @@
+{
+    "name": "thisisablock/json-content",
+    "description": "json for frontend",
+    "type": "craft-plugin",
+    "version": "0.2",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "jsoncontent"
+    ],
+    "support": {
+        "docs": "https://github.com/thisisablock/json-content/blob/master/README.md",
+        "issues": "https://github.com/thisisablock/json-content/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "thisisablock",
+            "homepage": "thisisablock.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "thisisablock\\jsoncontent\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "JsonContent",
+        "handle": "json-content",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/thisisablock/json-content/master/CHANGELOG.md",
+        "class": "thisisablock\\jsoncontent\\JsonContent"
+    }
+}

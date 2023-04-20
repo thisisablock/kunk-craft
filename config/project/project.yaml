@@ -1,0 +1,47 @@
+dateModified: 1682025322
+email:
+  fromEmail: hello@thisisablock.com
+  fromName: kunk
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0cdb6fdf-9a79-47bc-86c8-8b88b354528c: kunk # kunk
+    1f1eb152-ec5b-40f2-b0a3-88b5568bf0ad: Startseite # Startseite
+    2d099049-fd75-4b65-add7-e725cc7ad708: Standard # Standard
+    4c08a35f-94ce-4042-a700-6618cd0c8337: image # image
+    5c9d3a34-dad4-4e3a-8bbd-edd81b7732cd: Startseite # Startseite
+    6ace6ecb-18a2-42d0-874a-788fb3c8dbb7: text # text
+    605d4a24-c93b-461a-bfa0-decd07727939: Text # Text
+    3195fae9-4da7-4239-b870-0ba0c2740f04: Common # Common
+    4201b05e-2db8-432b-a252-c5a54725ad60: kunk # kunk
+    027186c7-24d6-4b13-a0a6-3fe5e0c0ab17: 'Content Blocks' # Content Blocks
+    627713f9-7d92-4cea-b1ec-b26743ed58e3: Title # Title
+    793367ff-84b0-4055-970e-34aac3965046: text_title_tag # text_title_tag
+    dc18c84b-d255-4839-b355-ae3e9a631556: Image # Image
+    ebca5164-f32a-49dc-ba11-572ad8a45ea8: Seite # Seite
+plugins:
+  admin-bar:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.1.0
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  json-export:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: kunk
+  retryDuration: null
+  schemaVersion: 4.4.0.4
+  timeZone: Europe/Berlin
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

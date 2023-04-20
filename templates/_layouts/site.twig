@@ -1,0 +1,71 @@
+{% set meta = craft.app.globals.getSetByHandle('meta') %}
+{% set locale = craft.app.locale %}
+{% set env = getenv('ENVIRONMENT') %}
+{% set localdev = getenv('LOCALDEV',"false") == "true" %}
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-language" content="{{ locale }}"/>
+
+    {% if not localdev %}
+{#        <link href="{{ rev('assets/index.css') }}" rel="stylesheet">#}
+    {% endif %}
+
+    {# @todo: add seofield  #}
+    {% hook 'seo' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#000000"/>
+    {# @todo: add favicons  #}
+</head>
+<body>
+{{ adminbar() }}
+{% cache globally if not craft.app.config.general.devMode %}
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="app">
+        <span class="intro-loader">
+            <style>.intro-loader{width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;margin:100px 0;opacity:.3}</style>
+            <p>clubverstärker</p>
+            {% if localdev %}
+                <div style="border: 2px solid black; padding: 10px 15px;">
+                    LOCALDEV enable<br/>
+                    Start your frontend live compiler and access page without https://<br/><br/>
+                    LOCALDEV can be toggle in the .env file
+                </div>
+            {% endif %}
+        </span>
+
+    </div>
+    {% block main %}{% endblock %}
+{% endcache %}
+
+{#{% cache using key "page-header" if not craft.app.config.general.devMode or currentUser %}#}
+    {% block jsonData %}
+        {% hook 'jsonData' %}
+    {% endblock %}
+{#{% endcache %}#}
+
+<script type="text/javascript">
+    window.csrfTokenName = "{{ craft.app.config.general.csrfTokenName|e('js') }}";
+    window.csrfTokenValue = "{{ craft.app.request.csrfToken|e('js') }}";
+</script>
+
+{#{% cache globally if not craft.app.config.general.devMode %}#}
+    {% if localdev %}
+        <script type="module" src="//localhost:3000/src/main.js"></script>
+    {% else %}
+        <script type="module" crossorigin src="/index.js"></script>
+    {% endif %}
+
+    {# @todo: add google analytics #}
+    {#{% if env == 'production' %}#}
+    {#{% endif %}#}
+{#{% endcache %}#}
+
+{% cache using key "page-header" if not craft.app.config.general.devMode or currentUser %}
+{% block schema %}
+    {# @todo add jsonld  #}
+{% endblock %}
+{% endcache %}
+</body>
+</html>

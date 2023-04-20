@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: de-DE
+name: kunk
+primary: true
+siteGroup: 0cdb6fdf-9a79-47bc-86c8-8b88b354528c # kunk
+sortOrder: 1

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: page
+name: Seite
+propagationMethod: all
+siteSettings:
+  4201b05e-2db8-432b-a252-c5a54725ad60: # kunk
+    enabledByDefault: true
+    hasUrls: true
+    template: page/_entry
+    uriFormat: '{slug}'
+type: channel

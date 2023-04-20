@@ -1,0 +1,43 @@
+fieldLayouts:
+  8d2c83a6-344b-4765-ad8d-0dd4384994bb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2a598579-1fbc-4068-b661-4e7e16937e95
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 2e9d7d83-f0d5-40ec-ab4b-9f43f9b32acb
+        userCondition: null
+handle: homepage
+hasTitleField: false
+name: Startseite
+section: 5c9d3a34-dad4-4e3a-8bbd-edd81b7732cd # Startseite
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

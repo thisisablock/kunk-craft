@@ -1,0 +1,147 @@
+field: 027186c7-24d6-4b13-a0a6-3fe5e0c0ab17 # Content Blocks
+fieldLayouts:
+  16261492-bb68-4f30-bb8d-7dfe4e97c767:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 627713f9-7d92-4cea-b1ec-b26743ed58e3 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 768866bd-350d-4b63-95af-23e3a0784811
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 793367ff-84b0-4055-970e-34aac3965046 # text_title_tag
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a6890e1a-cbd9-4fc2-add9-d02e7081cfc6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 605d4a24-c93b-461a-bfa0-decd07727939 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92b582f5-6e03-4caa-a29d-83166706a298
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1967343a-fdc7-4273-b3d6-76d768b8ec0f
+        userCondition: null
+fields:
+  605d4a24-c93b-461a-bfa0-decd07727939: # Text
+    columnSuffix: yxsclzun
+    contentColumnType: text
+    fieldGroup: null
+    handle: textBody
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  627713f9-7d92-4cea-b1ec-b26743ed58e3: # Title
+    columnSuffix: flmefabp
+    contentColumnType: text
+    fieldGroup: null
+    handle: text_title
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  793367ff-84b0-4055-970e-34aac3965046: # text_title_tag
+    columnSuffix: mhdywpzn
+    contentColumnType: string
+    fieldGroup: null
+    handle: textTitleTag
+    instructions: null
+    name: text_title_tag
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - h1
+            -
+              - value
+              - h1
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - h2
+            -
+              - value
+              - h2
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - h3
+            -
+              - value
+              - h3
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - h4
+            -
+              - value
+              - h4
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+handle: text
+name: text
+sortOrder: 1
