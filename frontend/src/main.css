@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: DIN;
+	font-display: swap;
+	src: url(./fonts/DINWebPro.woff) format("woff")
+}
+
+@font-face {
+	font-family: DIN;
+	font-weight: 700;
+	font-display: swap;
+	src: url(./fonts/DINWebPro-Bold.woff) format("woff")
+}
+

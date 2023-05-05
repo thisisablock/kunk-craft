@@ -52,9 +52,9 @@
 
 {#{% cache globally if not craft.app.config.general.devMode %}#}
     {% if localdev %}
-        <script type="module" src="//localhost:3000/src/main.js"></script>
+        <script type="module" src="//localhost:5173/src/main.ts"></script>
     {% else %}
-        <script type="module" crossorigin src="/index.js"></script>
+        <script type="module" crossorigin src="/main.js"></script>
     {% endif %}
 
     {# @todo: add google analytics #}
