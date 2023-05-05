@@ -80,6 +80,7 @@ class JsonContent extends Plugin
 
         Craft::$app->view->hook('jsonData', function(array &$context) {
 
+            die('xxx');
             $menus = $this->getMenus();
 
             $data = [];

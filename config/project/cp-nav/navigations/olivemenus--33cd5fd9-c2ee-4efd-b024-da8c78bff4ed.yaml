@@ -1,0 +1,17 @@
+currLabel: Menus
+customIcon: null
+enabled: true
+handle: olivemenus
+icon: /var/www/html/vendor/olivestudio/craft-olivemenus/src/icon-mask.svg
+layout: df7a4b78-bb14-4674-9f8a-b5b746984c2e # Default
+level: 1
+newWindow: false
+parent: null
+prevLabel: Olivemenus
+prevLevel: 1
+prevParent: null
+prevUrl: olivemenus
+sortOrder: 3
+subnavBehaviour: null
+type: plugin
+url: olivemenus

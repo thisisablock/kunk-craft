@@ -25,7 +25,7 @@
     <div id="app">
         <span class="intro-loader">
             <style>.intro-loader{width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;margin:100px 0;opacity:.3}</style>
-            <p>clubverstärker</p>
+            <p>hello</p>
             {% if localdev %}
                 <div style="border: 2px solid black; padding: 10px 15px;">
                     LOCALDEV enable<br/>
@@ -40,9 +40,9 @@
 {% endcache %}
 
 {#{% cache using key "page-header" if not craft.app.config.general.devMode or currentUser %}#}
-    {% block jsonData %}
-        {% hook 'jsonData' %}
-    {% endblock %}
+{% block jsonData %}
+    {% hook 'jsonData' %}
+{% endblock %}
 {#{% endcache %}#}
 
 <script type="text/javascript">

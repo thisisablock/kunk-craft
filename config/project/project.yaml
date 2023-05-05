@@ -1,4 +1,4 @@
-dateModified: 1682025322
+dateModified: 1683319926
 email:
   fromEmail: hello@thisisablock.com
   fromName: kunk
@@ -6,6 +6,7 @@ email:
 meta:
   __names__:
     0cdb6fdf-9a79-47bc-86c8-8b88b354528c: kunk # kunk
+    1d49d5aa-a307-45f4-a520-d1b820bec87a: Global # Global
     1f1eb152-ec5b-40f2-b0a3-88b5568bf0ad: Startseite # Startseite
     2d099049-fd75-4b65-add7-e725cc7ad708: Standard # Standard
     4c08a35f-94ce-4042-a700-6618cd0c8337: image # image
@@ -18,13 +19,26 @@ meta:
     627713f9-7d92-4cea-b1ec-b26743ed58e3: Title # Title
     793367ff-84b0-4055-970e-34aac3965046: text_title_tag # text_title_tag
     dc18c84b-d255-4839-b355-ae3e9a631556: Image # Image
+    df7a4b78-bb14-4674-9f8a-b5b746984c2e: Default # Default
     ebca5164-f32a-49dc-ba11-572ad8a45ea8: Seite # Seite
 plugins:
   admin-bar:
     edition: standard
     enabled: true
     schemaVersion: 3.1.0
+  cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.11
   dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  expanded-singles:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -32,6 +46,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  olivemenus:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.11
 system:
   edition: solo
   live: true
